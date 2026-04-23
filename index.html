@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farewell Party 2k26 - CSE Department</title>
+    <meta name="description"
+        content="Join us for the Farewell Party Night 2k26, organized by the CSE Department. A night of memories, music, and celebration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sparkle Elements -->
+    <div class="sparkles-container" id="sparkles"></div>
+
+    <!-- Header Section -->
+    <header class="hero">
+        <video autoplay loop muted playsinline class="hero-bg-video">
+            <source src="./media/bgvideo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <nav class="navbar">
+            <div class="logo">CSE<span>Farewell</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#memory-stream">Live Feed</a></li>
+                <li><a href="#itinerary">Itinerary</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#location-section">Location</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content" id="home">
+            <h1 class="title">FAREWELL</h1>
+            <h2 class="subtitle">Party! Night 2k26</h2>
+
+            <div class="organized-by">
+                <p>Organised By</p>
+                <h3>CSE Department</h3>
+                <p class="students">( "3rd & 2nd Year Students" )</p>
+            </div>
+
+            <div class="event-details">
+                <div class="event-line"></div>
+                <div class="date-block">
+                    <span class="month">APRIL</span>
+                    <span class="day">26</span>
+                    <span class="day-name">SUNDAY</span>
+                </div>
+                <div class="event-line"></div>
+                <div class="time-year">
+                    <span class="year">2026</span>
+                    <span class="time">5:00 TO 9:30 PM</span>
+                </div>
+            </div>
+
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>123 Anywhere St., Any City</p>
+            </div>
+
+            <a href="#memory-stream" class="cta-button">we want to say something<i class="fas fa-arrow-down"></i></a>
+        </div>
+    </header>
+
+    <!-- Memory Stream (Video Player) -->
+    <section class="memory-stream-section" id="memory-stream">
+        <div class="section-header">
+            <h2>The Manki Bat</h2>
+        </div>
+
+        <div class="video-container" style="height: 80vh; width: 50vh;">
+            <video id="main-video" playsinline>
+                <source src="./media/Video from Yash Borkar 🙃.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button id="play-pause" class="control-btn"><i class="fas fa-play"></i></button>
+                <button id="mute-unmute" class="control-btn"><i class="fas fa-volume-mute"></i></button>
+                <div class="progress-bar">
+                    <div class="progress-filled"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Itinerary Section -->
+    <section class="itinerary-section" id="itinerary">
+        <div class="section-header">
+            <h2>Event Itinerary</h2>
+            <p>What's happening tonight</p>
+        </div>
+
+        <div class="itinerary-grid">
+            <div class="itinerary-card">
+                <div class="icon-wrapper"><i class="fas fa-music"></i></div>
+                <h3>Live Music</h3>
+                <p>Groove to the beats of our amazing campus bands and DJs.</p>
+            </div>
+            <div class="itinerary-card">
+                <div class="icon-wrapper"><i class="fas fa-utensils"></i></div>
+                <h3>Gourmet Buffet</h3>
+                <p>A feast for your senses with a wide variety of delicious cuisines.</p>
+            </div>
+            <div class="itinerary-card">
+                <div class="icon-wrapper"><i class="fas fa-glass-cheers"></i></div>
+                <h3>Entertainment</h3>
+                <p>Mesmerizing performances and acts by talented students.</p>
+            </div>
+            <div class="itinerary-card">
+                <div class="icon-wrapper"><i class="fas fa-camera-retro"></i></div>
+                <h3>Photo Booth</h3>
+                <p>Capture the memories with props and instant printouts.</p>
+            </div>
+            <div class="itinerary-card">
+                <div class="icon-wrapper"><i class="fas fa-dice"></i></div>
+                <h3>Games & Prizes</h3>
+                <p>Participate in fun activities and win exciting rewards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Stories Section -->
+    <section class="stories-section" id="stories">
+        <div class="section-header">
+            <h2>Student Stories</h2>
+            <p>Share your favorite memories</p>
+        </div>
+
+        <div class="upload-container">
+            <button class="upload-btn" id="upload-btn">
+                <i class="fas fa-cloud-upload-alt"></i> UPLOAD A PHOTO
+            </button>
+            <input type="file" id="file-input" accept="image/*" style="display: none;">
+        </div>
+
+        <div class="gallery-grid" id="gallery">
+            <!-- Initial gallery items -->
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=600&q=80"
+                    alt="Student Memory">
+                <div class="overlay">
+                    <p>Class of 2k26 ❤️</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=600&q=80"
+                    alt="Graduation">
+                <div class="overlay">
+                    <p>We made it!</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80"
+                    alt="Party Crowd">
+                <div class="overlay">
+                    <p>Unforgettable nights</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80"
+                    alt="Event">
+                <div class="overlay">
+                    <p>Cheers to new beginnings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location-section">
+        <div class="section-header">
+            <h2>Venue Location</h2>
+            <p>Where the magic happens</p>
+        </div>
+        <div class="location-content">
+            <div class="location-details">
+                <h3>Grand Campus Auditorium</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Anywhere St., Any City</p>
+                <p><i class="fas fa-clock"></i> Sunday, April 26, 2026 | 5:00 PM - 9:30 PM</p>
+                <p><i class="fas fa-car"></i> Valet parking available at the main entrance.</p>
+                <a href="#" class="directions-btn">Get Directions <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.463283256956!2d-73.99619213829023!3d40.74853034988775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25903c150b0cd%3A0x8d5ea478d55a40b9!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689269785501!5m2!1sen!2sus"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>www.zintech.in</p>
+        <p>&copy; 2026 Z INTECH PVT. LTD.. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
