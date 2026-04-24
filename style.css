@@ -683,19 +683,55 @@ footer p:last-child {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar { padding: 20px 30px; }
+    .title { font-size: 5rem; }
+    .subtitle { font-size: 3.5rem; }
+    .video-container { max-width: 80%; }
+}
+
 @media (max-width: 900px) {
     .title { font-size: 4rem; }
     .subtitle { font-size: 3rem; }
-    .event-details { flex-direction: column; gap: 20px; }
-    .date-block::before, .date-block::after { display: none; }
     .gallery-grid { column-count: 2; }
+    .event-line { width: 30px; }
+    .day { font-size: 3rem; }
+    .organized-by h3 { font-size: 1.5rem; }
 }
 
 @media (max-width: 600px) {
-    .navbar { padding: 15px 20px; flex-direction: column; gap: 15px; }
-    .nav-links { gap: 15px; flex-wrap: wrap; justify-content: center; }
-    .title { font-size: 3rem; }
-    .subtitle { font-size: 2rem; }
+    .navbar { 
+        padding: 15px; 
+        flex-direction: column; 
+        gap: 10px; 
+        background: rgba(0, 0, 0, 0.8); /* Dark background so links are visible */
+        backdrop-filter: blur(10px);
+    }
+    .nav-links { gap: 10px; flex-wrap: wrap; justify-content: center; }
+    .nav-links a { font-size: 12px; }
+    .hero { padding: 120px 15px 60px; }
+    .title { font-size: 2.8rem; letter-spacing: 2px; }
+    .subtitle { font-size: 2rem; margin-bottom: 20px; }
+    
+    .event-details { 
+        flex-direction: column; 
+        gap: 0; 
+    }
+    .event-line { 
+        width: 1px; 
+        height: 30px; 
+        margin: 15px 0; 
+    }
+    .date-block { padding: 0; }
+    .time-year { padding: 0; align-items: center; }
+    
+    .video-container { max-width: 100%; border-radius: 10px; }
     .gallery-grid { column-count: 1; }
     section { padding: 60px 5vw; }
+    .section-header h2 { font-size: 2.2rem; }
+    
+    .location-details { padding: 30px 20px; }
+    .location-details h3 { font-size: 1.5rem; }
+    
+    .itinerary-card { padding: 30px 20px; }
 }
